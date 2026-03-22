@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --primary: #0f172a;
+  --accent: #3b82f6;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--primary);
+  font-family: var(--font-sans);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.voice-wave {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  height: 40px;
+}
+
+.voice-bar {
+  width: 4px;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: height 0.1s ease;
+}

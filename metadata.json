@@ -1,0 +1,5 @@
+{
+  "name": "RecruitAI",
+  "description": "An AI-powered mock interview platform with real-time voice interaction and instant feedback.",
+  "requestFramePermissions": ["microphone"]
+}
